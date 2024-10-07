@@ -2,46 +2,57 @@
 <html>
   <head>
     <title>Personal website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <h1 class="logo">
-        <a href="index.html">Personal website</a>
-      </h1>
-      <ul class="nav-list">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="blog.html"> Blog</a></li>
-        <li><a href="portfolio.html"> Portfolio</a></li>
-        <li><a href="resume.html"> Resume</a></li>
-        <li><a href="contact.html"> Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">Personal website</a>
+        <a href="index.html"> Home</a>
+        <a href="blog.html"> Blog</a>
+        <a href="portfolio.html"> Portfolio</a>
+        <a href="resume.html"> Resume</a>
+        <a href="contact.html"> Contact</a>
+        <a href="https://github.com/ChachaTeraSira" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/khushkaranpreet-grewal-478b85213/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/chachaterasira/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </nav>
+    </header>
     <main>
-      <h1>Hello World!</h1>
-      <div class="about">
-        <div class="about-image">
-          <img
-            src="Astronaut flying in space.jpg"
-            alt="Astronaut Wallpaper"
-            width="600"
-          />
+      <div class="blurred-bg-container"></div>
+      <div class="blurred-bg"></div>
+      <div class="content">
+        <div class="about">
+          <div>
+            <img
+              class="about-image"
+              src="Personal Website profile pic - with sunset.jpeg"
+              alt="Profile-picture"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Hey y'all, My name is Khushkaranpreet Singh Grewal, from Central
+              Valley, California. I'm a
+              <em>Computer Science transfer</em> student starting fall 2024. Fun
+              fact about me, I recently <strong>graduated</strong> from my
+              Community College with
+              <strong>10 Associate Degree's and 5 Certifications</strong>. My
+              hobbies include sketching, listening to music while going on solo
+              drives, Playing CODM.
+            </p>
+          </div>
         </div>
-        <div class="about-text">
-          <p>
-            Hey y'all, My name is Khushkaranpreet Singh Grewal, from Central
-            Valley, California. I'm a <em>Computer Science transfer</em> student
-            starting fall 2024. Fun fact about me, I recently
-            <strong>graduated</strong> from my Community College with
-            <strong>10 Associate Degree's and 5 Certifications</strong>. My
-            hobbies include sketching, listening to music while going on solo
-            drives, Playing CODM.
-          </p>
-        </div>
+          <footer class="footer">
+            © 2024 Personal Website | All Rights Reserved
+          </footer>
       </div>
     </main>
-    <footer class="footer">
-      © 2023 Personal Website | All Rights Reserved
-    </footer>
   </body>
 </html>

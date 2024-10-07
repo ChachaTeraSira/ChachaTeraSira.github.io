@@ -1,28 +1,236 @@
-body {
-  background-image: url("Astronaut\ flying\ in\ space.jpg");
-  background-size: cover; /* Ensures the image covers the entire page */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Removes default margin */
-}
-.navbar {
-  text-align: center;
-  color: white;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adds a semi-transparent background for better readability */
-}
-a {
-  color: white;
-  text-decoration: none; /* Optional: removes the underline from the link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-/* Optional: change the color when hovering */
-a:hover {
-  color: lightgray;
-  text-decoration: underline; /* Optional: adds underline on hover */
+html {
+  font-size: 62.5%;
+}
+
+.page-title {
+  color: black;
+}
+
+body {
+  color: rgb(210, 190, 162);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  margin: 0;
+}
+
+.blurred-bg-container {
+  width: 100%;
+  height: 100%;
+}
+
+.blurred-bg {
+  background-image: url("Designer\ \(7\).jpeg");
+  /* background-color: rgb(210,190,162); */
+  background-attachment: fixed;
+  filter: blur(1.2px); /* Apply blur effect */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place behind content */
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 150px; /* Adjust padding for centering */
+}
+
+.logo {
+  font-size: 3rem;
+  color: rgb(149, 147, 192);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-right: 100rem;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 2.4rem;
+  color: rgb(149, 147, 192);
+  margin-left: 3rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  padding: 10px 15px;
+  box-shadow: var(--boxshadow);
+  border-radius: 30px;
+  border: var(--border);
+}
+
+nav a:hover,
+nav a.active {
+  color: rgb(210, 190, 162);
+  border-bottom: 3px solid rgb(210, 190, 162);
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.social-links {
+  margin: 1px;
+}
+
+.about {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 100px;
+  padding: 40px 700px;
+  box-shadow: var(--boxshadow);
+  border-radius: 30px;
+  border: var(--border);
+  backdrop-filter: blur(18px);
+}
+
+.about-image {
+  position: relative;
+  width: 20vw;
+  padding: 5px;
+  border-radius: 80%;
+  box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.25);
+  margin-right: 100px;
+}
+
+.about-text {
+  font-size: large;
+  display: flex;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  padding: 10px 70px;
+  box-shadow: var(--boxshadow);
+  border-radius: 15px;
+  border: var(--border);
+  backdrop-filter: blur(18px);
+}
+
+.section {
+  font-size: 11px;
+  color: rgb(0, 0, 0);
+  box-shadow: var(--boxshadow);
+  border-radius: 30px;
+  border: var(--border);
+  backdrop-filter: blur(18px);
+}
+
+.blog-description {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  box-shadow: var(--boxshadow);
+  border-radius: 30px;
+  border: var(--border);
+  backdrop-filter: blur(18px);
+}
+
+.project-description {
+  font-size: 20px;
+  padding: 40px;
+  color: white;
+  box-shadow: var(--boxshadow);
+  border-radius: 30px;
+  border: var(--border);
+  backdrop-filter: blur(18px);
+}
+
+.container {
+  position: relative;
+  width: 700px;
+  padding: 30px 20px;
+  color: white;
+  box-shadow: var(--boxshadow);
+  border-radius: 30px;
+  border: var(--border);
+  backdrop-filter: blur(18px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.container h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+  
+}
+
+.container .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.container .input-box input {
+  width: 97%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: var(--border);
+  margin: 0px 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.container .input-box input::placeholder {
+  color: rgb(231, 215, 192);
+  font-size: 25px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  color: rgb(78, 78, 78);
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 20px;
+  border: var(--border);
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
 }
